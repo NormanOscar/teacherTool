@@ -1,0 +1,127 @@
+{
+	"gradingTools" : [
+		{
+			"name" : "Skolverket",
+			"areas" : [
+				{
+					"name" : "Läsa",
+					"criteria" : [
+						{
+							"name" : "Avkodning",
+							"level" : [
+								"1 (Logografisk ljudning)", "2 (Enkel ljudning)", "3 (Avancerad ljudning)", "4 (Ortografisk helordsläsning)"
+							]
+						},
+						{
+							"name" : "Läsförståelse",
+							"level" : [
+								"1 (På raden)", "2 (Mellan raderna)", "3 (Bortom Raderna)", "4 (Högläsning - Språkförståelse)"
+							]
+						}
+					]
+				},
+				{
+					"name" : "Skriva åk 1",
+					"criteria" : [
+						{
+							"name" : "Skrivriktning",
+							"level" : [1]
+						},
+						{
+							"name" : "Gemener/versaler",
+							"level" : [1]
+						},
+						{
+							"name" : "Mellanrum",
+							"level" : [1]
+						},
+						{
+							"name" : "Fonem/grafem",
+							"level" : [1]
+						}
+					]
+				},
+				{
+					"name" : "Återberätta",
+					"criteria" : [
+						{
+							"name" : "???",
+							"level" : [1]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Legilexi",
+			"areas" : [
+				{
+					"name" : "Läsa",
+					"criteria" : [
+						{
+							"name" : "Avkodning",
+							"level" : [
+								"1 (Logografisk ljudning)", "2 (Enkel ljudning)", "3 (Avancerad ljudning)", "4 (Ortografisk helordsläsning)"
+							]
+
+						},
+						{
+							"name" : "Läsförståelse",
+							"level" : [
+								"1 (På raden)", "2 (Mellan raderna)", "3 (Bortom Raderna)", "4 (Högläsning - Språkförståelse)"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Bygga Svenska",
+			"areas" : [
+				{
+					"name" : "Läsa",
+					"criteria" : [
+						{
+							"name" : "???",
+							"level" : [
+								"1", "2", "3", "4"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "H4",
+			"areas" : [
+				{
+					"name" : "Läsa",
+					"criteria" : [
+						{
+							"name" : "Läshastighet",
+							"level" : [
+								"1 (Statine 1)", "2 (Statine 2)", "3 (Statine 3)", "4 (Statine 4)", "5 (Statine 5)", "6 (Statine 6)"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name" : "Gömma nyckel",
+			"areas" : [
+				{
+					"name" : "Läsa",
+					"criteria" : [
+						{
+							"name" : "Läsförståelse",
+							"level" : [
+								"1 (På raden)", "2 (Mellan raderna)", "3 (Bortom Raderna)"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

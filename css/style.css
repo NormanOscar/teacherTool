@@ -1,0 +1,47 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    background-color: #ededed;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+.required-symbol {
+    color: red;
+}
+
+#form-block {
+    width: 30%
+}
+
+#area-div, #criteria-div, #level-div, #level-select-div {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #form-block {
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #form-block {
+      width: 80%;
+    }
+}

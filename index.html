@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    <title>Lärarverktyg</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center main-div" style="height: 100%">
+			<form id="form-block">
+				<h1 class="mb-4" style="text-align: center;">Föra in elevdata</h1>
+				<div class="form-outline mb-2">
+					<label for="name">Elevens namn: <span class="required-symbol">*</span></label>
+					<input type="text" class="form-control border border-2" id="name" name="name" required/>
+				</div>
+
+				<div class="form-outline mb-2">
+					<label for="grade">Årskurs: <span class="required-symbol">*</span></label>
+					<input type="text" class="form-control border border-2 form-text" id="grade" name="grade" required/>
+				</div>
+
+				<div class="form-outline mb-2" id="gradingTool-div">
+					<label for="grading-tool">Bedömningsverktyg: <span class="required-symbol">*</span></label>
+					<select class="form-select border border-2" id="gradingTool" name="gradingTool" required>
+						<option value="0">Välj bedömningsverktyg</option>
+					</select>
+				</div>
+				
+				<div class="form-outline mb-2" id="area-div">
+					<label for="area">Område: <span class="required-symbol">*</span></label>
+					<select class="form-select border border-2" id="area" name="area" required>
+					</select>
+				</div>
+
+				<div class="form-outline mb-2" id="criteria-div">
+					<label for="criteria">Kriteria: <span class="required-symbol">*</span></label>
+					<select class="form-select border border-2" id="criteria" name="criteria" required>
+					</select>
+				</div>
+
+				<div id="level-div">
+					<div class="form-outline mb-2" id="level-select-div">
+						<label for="level">Nivå: <span class="required-symbol">*</span></label>
+						<select class="form-select border border-2" id="level" name="level" required>
+						</select>
+					</div>
+
+					<div class="form-check mb-2" id="level-check-div">
+						<label class="form-check-label" for="flexCheckDefault">Uppnår kriteria </label>
+						<input class="form-check-input border border-2" type="checkbox" id="flexCheckDefault">
+					</div>
+				</div>
+
+				<div class="form-outline mb-2">
+					<label for="comment">Kommentar:</label>
+					<textarea class="form-control border border-2 form-text" rows="4" id="comment"></textarea>
+				</div>
+
+				<button class="btn btn-primary btn-block w-100 mb-2" id="submitBtn">
+					Skicka
+				</button>
+			</form>
+    </div>
+  </body>
+</html>
