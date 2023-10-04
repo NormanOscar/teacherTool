@@ -55,6 +55,9 @@ function showGradingTools() {
 function showArea() {
     document.querySelector('#criteria-div').style.display = 'none';
     document.querySelector('#level-div').style.display = 'none';
+    document.querySelector('#level-select-div').style.display = 'none';
+    document.querySelector('#level-check-div').style.display = 'none';
+
     const selectedDataPoint = data.gradingTools.find((dataPoint) => dataPoint.name === gradingTool.value);
     
     document.querySelector('#area-div').style.display = 'block';
@@ -81,6 +84,8 @@ function showArea() {
 
 function showCriteria() {
     document.querySelector('#level-div').style.display = 'none';
+    document.querySelector('#level-select-div').style.display = 'none';
+    document.querySelector('#level-check-div').style.display = 'none';
 
     const selectedGradingTool = data.gradingTools.find((dataPoint) => dataPoint.name === gradingTool.value);
     const selectedArea = selectedGradingTool.areas.find((dataPoint) => dataPoint.name === area.value);
@@ -108,7 +113,6 @@ function showCriteria() {
 }
 
 function showLevel() {
-
     const selectedGradingTool = data.gradingTools.find((dataPoint) => dataPoint.name === gradingTool.value);
     const selectedArea = selectedGradingTool.areas.find((dataPoint) => dataPoint.name === area.value);
     const selectedCriteria = selectedArea.criteria.find((dataPoint) => dataPoint.name === criteria.value);
@@ -117,9 +121,7 @@ function showLevel() {
     level.innerHTML = '';
 
     if (selectedCriteria.level.length === 1) {
-        const option = document.createElement('option');
-        option.textContent = selectedCriteria.level[0].name;
-        level.appendChild(option);
+        document.querySelector('#level-check-div').style.display = 'block';
     }
     else {
         document.querySelector('#level-select-div').style.display = 'block';
@@ -142,7 +144,12 @@ function submitForm() {
     const gradingToolVal = gradingTool.value;
     const areaVal = area.value;
     const criteriaVal = criteria.value;
-    const levelVal = level.value;
+    var levelVal;
+    if (document.querySelector('#level-select-div').style.display == 'block') {
+        levelVal = level.value;
+    } else {
+        levelVal = document.querySelector('#flexCheckDefault').checked ? 'Uppnår' : 'Uppnår inte';
+    }
     const commentVal = document.querySelector('#comment').value;
 
     const studentData = {
